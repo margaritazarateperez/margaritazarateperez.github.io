@@ -1,0 +1,332 @@
+/*Fcaultad de Arquitectura
+Colegio de Diseño Grafico
+Diseño de Interfaces Graficas de Usuarios
+ZaratePerez Margarita
+202077669*/
+@import url('https://fonts.googleapis.com/css2?family=Mali:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+head, header,nav,main,footer{
+    width: 100%;
+    padding: 40px;
+    background-color: #7C444F;
+    color: #F39E60;
+}
+
+header,footer{
+    text-align: center;
+    font-size: 48px;
+}
+nav{
+    height: auto;
+    background-color: #9F5255;
+}
+nav ul{
+    text-align: center;
+}
+nav ul li{
+    width: 10%;
+    height: 30px;
+    min-width: 100px;
+    background-color: #7C444F;
+    display: inline-block;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    list-style-type: none;
+    border-radius: 30px;
+}
+main{
+    width: 100%;
+    height: auto;
+    background-color: #F39E60;
+    color: #9F5255;
+    padding: 50px;
+}
+footer h6{
+    font-size: 24px;
+    font-family: "Mali", cursive;
+}
+section{
+    width: 70%;
+    height: auto;
+    background-color: #E16A54;
+    margin-bottom: 30px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    color: #F39E60;
+    font-family: "Roboto", sans-serif;
+}
+p{
+    margin-top: 20px;
+}
+h2{
+    color: #7C444F;
+     font-family: "Mali", cursive;
+}
+img{
+    width: 50%;
+    margin-top: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+#img_gif{
+    width: 30%;
+    border-radius: 50%;
+}
+.img_float{
+    width: 15%;
+    min-width: 15%;
+}
+#img_izq{
+    float: left;
+    margin: 2px;
+    margin-right: 20px; 
+    width: 30%;
+}
+#img_der{
+    float: right;
+    margin: 10px;
+    margin-bottom: auto;
+    margin-left: 25px;
+    width: 15%;
+}
+#img_ico{
+    width: 32px;
+    height: auto;
+    margin-right: 0;
+    margin: 0 5px;
+}
+#fondo{
+    height: 600px;
+    background-image: url("../imagenes/pareja.jpg");
+    background-size: 100% auto;
+    background-repeat: no-repeat;
+}
+nav ul li a:link{
+    color: #FAD0C4;
+    text-decoration: none;
+}
+
+nav ul li a:visited{
+    color: #B8D576;
+}
+    
+nav ul li a:hover{
+    color: #FFEFC8;
+    text-decoration: underline;
+}
+
+nav ul li a:active{
+    color: #D70654;
+    text-decoration: none;
+ 
+}
+nav ul li:hover{
+    width: 12%;
+    background-color:#727D73;
+                    
+}
+
+video,iframe{
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+.box_videos{
+    text-align: center;
+}
+.box_videos section{
+    width: 40%;
+    min-width: 360px;
+    display: inline-block;
+    margin-right: 30px;
+    margin-left: 30px;
+    margin-bottom: 30px;
+    margin-top: 30px;
+    height: 600px;
+    overflow-y: auto;
+}
+.box_videos section p{
+    text-align: justify;
+}
+header h1{
+    font-family: "Mali", cursive;
+    font-size: 50px;
+}
+.img_animacion{
+    width: 30%;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
+    display: block;
+}
+form{
+    width: 50%;
+    background-color: cornsilk;
+    padding: 50px;
+    margin-left: auto;
+    margin-right: auto;
+    color:darkgoldenrod;
+    margin-top: 30px;
+    border-radius: 20px;
+}
+input[type=text], input[type=password],input[type=sub-email], input[type=search]{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: darksalmon;
+    color: beige;
+    border: 3px solid burlywood;
+    border-radius: 10px;
+}
+input[type=text]:focus, input[type=password]:focus, input[type=sub-email]:focus, input[type=search]:focus{
+    background-color: aliceblue;
+    color: sandybrown;
+    font-weight: bolder;
+    border: 5px solid yellow;
+}
+label{
+    font-weight: bolder;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    display: block;
+}
+input[type=submit], input[type="reset"]{
+    width: 20%;
+    min-width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    background-color: burlywood;
+    color: azure;
+    font-weight: bolder;
+    border-radius: 10px;
+     cursor: pointer;
+    }
+input[type="submit"]:hover, input[type="reset"]:hover {
+            background-color: #FFAB5B;
+        }
+ input[type=tel],input[type=file], input[type=date], input[type=email]{
+    width: 100%;
+    display: block;
+    padding: 10px;
+    background-color: #FCE7C8;
+    color: #5A6C57;
+    border: 3px solid #B1C29E;
+    border-radius: 10px;
+    
+}
+input[type=tel]:focus,input[type=file]:focus, input[type=date]:focus, input[type=email]:focus{
+    background-color: #FFE6A9;
+    color: #D98324;
+    font-weight: bolder;
+    border: 5px solid #F0A04B;
+}
+input[type=color]{
+    width: 100%;
+    display: block;
+    background-color: #FCE7C8;
+    color: #5A6C57;
+    border: 3px solid #B1C29E;
+    border-radius: 10px; 
+}
+input[type=color]:focus{
+     background-color: #FFE6A9;
+    color: #D98324;
+    font-weight: bolder;
+    border: 5px solid #F0A04B;
+}
+button[type=submit]{
+    width: 20%;
+    min-width: 100px;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    padding: 10px;
+    background-color: #DDEB9D;
+    color: azure;
+    font-weight: bolder;
+    border-radius: 10px;
+    border: none;
+}
+button:hover{
+    background-color: #9ABF80;
+}
+footer h6{
+    display: inline-block;
+     text-align: center;
+}
+#home_ico {
+    width: 50px;
+    height: 50px;
+    position: absolute; 
+    top: 1px; 
+    right: 10px; 
+}
+.radio-group, .checkbox-group {
+        display: flex;
+        align-items: center;
+        margin: 10px 0;
+}
+input[type="radio"], input[type="checkbox"] {
+        margin-right: 5px;
+    margin-left: 10px;
+    margin-right: 10px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+input[type="datetime-local"], input[type="hidden"], input[type="search"], input[type="week"] {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            
+        }
+        .button-group {
+            display: flex;
+            justify-content: space-between;
+        }
+        .person-buttons {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .person-button {
+            background-color: #FFCF50;
+            color: white;
+            border: none;
+            border-radius: 4px;
+            padding: 10px;
+            cursor: pointer;
+            flex: 1;
+            margin: 0 5px; /* margen entre botones */
+            text-align: center;
+        }
+        .person-button:hover {
+            background-color: #FFCDB2;
+        }
+.satisfaction-group {
+            display: flex;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+        .satisfaction-group input {
+            margin-right: 5px;
+        
+/*Elaborado por Margarita Zarate Perez*/

@@ -1,0 +1,566 @@
+<!--
+Fcaultad de Arquitectura
+Colegio de Diseño Grafico
+Diseño de Interfaces Grafias de Usuarios
+Zarate Perez Margarita
+202077669
+-->
+<html>
+    <head>
+        <title>Tablas en HTML</title>
+           <link rel="preconnect" href="https://fonts.googleapis.com">
+            <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+            <link href="https://fonts.googleapis.com/css2?family=Chewy&family=Farro:wght@300;400;500;700&display=swap" rel="stylesheet">
+            <style type="text/css">
+                *{
+                    padding: 0;
+                    margin: 0;
+                    box-sizing: border-box;
+                }
+                header,nav,main,footer{
+                    width: 100%;
+                    padding: 30px;
+                   background-color: #7C444F;
+                    color: #F39E60;
+                }
+                header{
+                    height: 200px;
+                    font-family: "Mali", cursive;
+                    font-size: 35px;
+                    
+                }
+                nav{
+                    height: auto;
+                    background-color: #9F5255;
+                }
+                main{
+                    height: auto;
+                     background-color: #F39E60;
+                    color: #9F5255;
+                }
+                footer{
+                    height: 80px;
+                
+                }
+                section{
+                    width: 70%;
+                    height: auto;
+                     background-color: #E16A54;
+                    color:#F39E60;
+                    margin-left: auto;
+                    margin-right: auto;
+                    margin-bottom: 30px;
+                    padding: 30px;
+                    overflow-x: auto;
+                     font-family: "Farro", sans-serif;
+                }
+                h2{
+                    color: #7C444F;   
+             margin-bottom: 20px;
+             font-family: "Mali", cursive;
+                    
+                }
+                header,footer{
+                    text-align: center;
+                    font-family: "Chewy", system-ui;
+                    font-size: 45px;
+                    
+                }
+                nav ul{
+                    text-align: center;
+                }
+                
+                
+                nav ul li{
+                    width: 10%;
+                    background-color: #7C444F;
+                    margin-left: 10px;
+                    margin-right: 10px;
+                    margin-bottom: 10px;
+                    list-style-type: none;
+                    padding: 10px;
+                    display: inline-block;
+                    border-radius: 30px;
+                }
+                
+                nav ul li a{
+                    text-decoration: none;
+                }
+                p{
+                    margin-bottom: 30px;
+                     text-align: justify;
+                    font-weight: 400;
+                
+                }
+                table{
+                    background-color: aquamarine;
+                    
+                }
+                #tab_buap{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-spacing: 10px;
+                    border-collapse: collapse;
+                    
+                }
+                #tab_buap th{
+                    background-color: royalblue;
+                    color: aliceblue;
+                    height: 50px;
+                }
+                #tab_buap td{
+                    background-color: aliceblue;
+                        color: midnightblue;
+                    height: 30px;
+                    padding: 10px;
+                }
+                #tab_buap th, #tab_buap td{
+                    border-width: 3px;
+                    border-color: lightskyblue;
+                    border-style: solid;
+                }
+                #tab_libros{
+                    width: 70%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    border-collapse: collapse;
+                    border-spacing: 10px;
+                }
+                #tab_libros th{
+                    height: 50px;
+                    background-color: saddlebrown;
+                    color: bisque;
+                    
+                }
+                #tab_libros tbody tr:nth-child(even){
+                    background-color: sandybrown;
+                    color: saddlebrown;
+                }
+                #tab_libros tbody tr:nth-child(odd){
+                    background-color: bisque;
+                    color: saddlebrown;
+                }
+                #tab_libros tfoot tr{
+                    background-color: saddlebrown;
+                    color: bisque;
+                }
+                #tab_libros td{
+                    height: 30px;
+                    padding: 20px;
+                    
+                }
+                #tab_libros th, #tab_libros td{
+                    border-width: 3px;
+                    border-color:rosybrown;
+                    border-style: solid;
+                    
+                }
+                #tab_pelis{
+                    width: 80%;
+                    margin-left: auto;
+                    margin-right: auto;
+                    /*Esta prpedad separa las celdad de la tabla border-spacing: 10px;*/
+                    border-collapse: collapse;
+                    background-color: burlywood;
+                    
+                }
+                #tab_pelis th{
+                    background-color: saddlebrown;
+                    color: bisque;
+                    height: 50px;
+                    padding: 10px;
+                    
+                }
+                #tab_pelis, #tab_pelis th, #tab_pelis td{
+                    border-image-width: 3px;
+                    border-bottom-style: solid;
+                    border-color:  rosybrown;
+                    
+                    
+                }
+                #tab_pelis td{
+                    height: 30px;
+                    padding: 20px;
+                }
+                /*#tab_pelis tbody tr:hover{
+                    background-color: yellow;
+                }*/
+                #tab_pelis tbody tr td:hover{
+                    background-color: yellow;
+                }
+                #tab_series{
+                    width: 1500px;
+                    border-collapse: collapse;
+                    background-color: burlywood;
+                }
+                #tab_series th, #tab_series td{
+                    border:1px solid brown;
+                    padding: 10px;
+                }
+                #tab_series th{
+                    background-color: darkgoldenrod;
+                    color: saddlebrown;
+                }
+                nav ul li a:link{
+    color: #FAD0C4;
+    text-decoration: none;
+}
+
+nav ul li a:visited{
+    color: #B8D576;
+}
+    
+nav ul li a:hover{
+    color: #FFEFC8;
+    text-decoration: underline;
+}
+
+nav ul li a:active{
+    color: #D70654;
+    text-decoration: none;
+ 
+}
+nav ul li:hover{
+    width: 12%;
+    background-color:#727D73;
+                    
+}
+                 img {
+        width: 50px;
+        margin-top: 50px;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+    #home_ico {
+        width: 50px;
+        height: 50px;
+        position: absolute; 
+        top: 1px; 
+        right: 10px; 
+    }
+        </style> 
+    </head>
+    <body>
+        <header>
+            <h1><a href="../index.html"><img id="home_ico" src="../imagenes/casita.png" alt="index" width="50" height="50"></a>TABLAS</h1>
+        </header>
+      
+        <nav>
+             <ul>
+            <li><a href="../html/FORMATO%20_DE%20_TEXTO.html">Formatos</a></li>
+            <li><a href="../html/listas.html">Listas</a></li>
+            <li><a href="../html/enlaces.html">Enlaces</a></li>
+            <li><a href="../html/Tablas.html">Tablas</a></li>
+            <li><a href="../html/IMAGENES.html">Imagenes</a></li>
+            <li><a href="../html/AUDIO.html">Audio</a></li>
+            <li><a href="../html/VIDEOS.html">Video</a></li>
+            <li><a href="../html/Formularios.html">Formularios</a></li>
+            </ul>
+        </nav>
+        <main>
+            <section>
+                <h2>Tabla Simple</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras sollicitudin, felis nec consequat aliquam, ex lectus pulvinar nunc, id pretium ante nisl in erat. Aliquam cursus fermentum mi, id scelerisque quam suscipit sit amet. Duis finibus luctus mauris, ultrices ullamcorper enim bibendum a. Fusce facilisis a metus vitae commodo. Ut ornare, ex vitae imperdiet hendrerit, turpis justo venenatis erat, et congue dolor augue vel sapien. Donec et vulputate diam, eget porttitor quam. Sed sollicitudin metus ut velit lobortis iaculis. Mauris porttitor ligula fermentum lacus cursus finibus. Integer non quam laoreet, lacinia purus eget, rhoncus dolor. Nam at arcu dignissim, auctor.</p>
+                <table id="tab_buap" border="1">
+                    <thead>
+                    <tr>
+                        <th>Matricula</th>
+                        <th>Nombre</th>
+                        <th>Facultad</th>
+                        <th>Celular</th>
+                        <th>Correo</th>
+                        
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>202158696</td>
+                            <td>Maria Jose Rojas Perez</td>
+                            <td>Contaduria</td>
+                            <td>2221569863</td>
+                            <td>mary.rojas@gmail.com</td>
+                        </tr>
+                            <tr>
+                            <td>202486963</td>
+                            <td>Eduardo Meneses Diaz</td>
+                            <td>Derecho</td>
+                            <td>222585457</td>
+                            <td>lalo_md@outlook.com</td>
+                        </tr>
+                            <tr>
+                            <td>202236542</td>
+                            <td>Sara ominguez Juarez</td>
+                            <td>Arquitectura</td>
+                            <td>222147852</td>
+                            <td>sara-dom@outlook.com</td>
+                        </tr>
+                            <tr>
+                            <td>202563656</td>
+                            <td>Pedro Guitierrez Mendez</td>
+                            <td>Quimica</td>
+                            <td>2223698560</td>
+                            <td>pepe-Men@gmail.com</td>
+                        </tr>
+                            <tr>
+                            <td>202485451</td>
+                            <td>Alfredo Solis Hernandez</td>
+                            <td>Biologia</td>
+                            <td>2221414155</td>
+                            <td>fredo23@gmail.com</td>
+                        </tr>
+                            <tr>
+                            <td>202365987</td>
+                            <td>Fernanda Benitez Camacho</td>
+                            <td>Arquitectura</td>
+                            <td>2222456988</td>
+                            <td>fer_benitez@outlook.com</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                    
+                    </tfoot>
+                    
+                </table>
+               
+            </section>
+            <section>
+                <h2>Tabla Cebra</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras dictum tristique arcu, non pharetra risus porttitor ut. Mauris commodo arcu at metus vehicula suscipit. Sed at est erat. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Vivamus in euismod ligula. Vestibulum convallis interdum mauris a faucibus. Aliquam a metus neque. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Phasellus tristique risus sapien, non tincidunt lectus blandit ac. Mauris a pretium.</p>
+               <table id="tab_libros" border="1">
+                    <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Autor</th>
+                        <th>Año</th>
+                        <th>Editorial</th>
+                        <th>Precio</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Harry Potter y la piedra filosofal</td>
+                            <td>J.k. Rowling</td>
+                            <td>1997</td>
+                            <td>Bloomsbury</td>
+                            <td>339.00</td>
+                        </tr>
+                            <tr>
+                            <td>Divergente</td>
+                            <td>Veronica Roth</td>
+                            <td>2011</td>
+                            <td>Harper Collins</td>
+                            <td>429.00</td>
+                        </tr>
+                            <tr>
+                            <td>Fallen</td>
+                            <td>Lauren Kate</td>
+                            <td>2009</td>
+                            <td>Delacorte Books</td>
+                            <td>356.15</td>
+                        </tr>
+                            <tr>
+                            <td>Gimme a call</td>
+                            <td>Sarah Mlynowski</td>
+                            <td>2010</td>
+                            <td>Listening Library</td>
+                            <td>459.16</td>
+                        </tr>
+                            <tr>
+                            <td>La isla del tesoro</td>
+                            <td>Robert L. Stevenson</td>
+                            <td>1883</td>
+                            <td>Fontana</td>
+                            <td>530.00</td>
+                        </tr>
+                            <tr>
+                            <td>Cosas que los adultos no pueden entender</td>
+                            <td>Javier Malpica</td>
+                            <td>2008</td>
+                            <td>Castillo</td>
+                            <td>237.00</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Total</td>
+                            <td>$2,350.31</td>
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+               
+            </section>
+            <section>
+                <h2>Tabla Hover</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed convallis purus quis ex lobortis, non iaculis quam sollicitudin. Integer vel pretium nibh, eu rhoncus quam. Morbi porttitor nibh quis nisl mollis, ut fringilla diam ornare. Donec eget sem quis nunc ornare gravida. Aenean tincidunt, purus vel efficitur placerat, arcu dolor tempor risus, nec molestie enim erat quis libero. Pellentesque pretium.</p>
+                 <table id="tab_pelis" border="1">
+                    <thead>
+                    <tr>
+                        <th>Titulo</th>
+                        <th>Director</th>
+                        <th>Año</th>
+                        <th>Genero</th>
+                        <th>Idioma</th>
+                        <th>Duracion</th>
+                        </tr>
+                    </thead>
+                        <tbody>
+                        <tr>
+                            <td>Heretic</td>
+                            <td>Scott Beck</td>
+                            <td>2024</td>
+                            <td>Terror psicologico</td>
+                            <td>Ingles</td>
+                            <td>110</td>
+                        </tr>
+                            <tr>
+                            <td>El increíble castillo vagabundo</td>
+                            <td>Toshio Suzuki</td>
+                            <td>2004</td>
+                            <td>Fntasia</td>
+                            <td>Japones</td>    
+                            <td>119</td>
+                        </tr>
+                            <tr>
+                            <td>Oscuros</td>
+                            <td>Scott Hicks</td>
+                            <td>2016</td>
+                            <td>Ficcion</td>
+                            <td>Ingles</td>    
+                            <td>92</td>
+                        </tr>
+                            <tr>
+                            <td>Encanto</td>
+                            <td>Byron Howard</td>
+                            <td>2021</td>
+                            <td>Musical</td>
+                            <td>Español</td>    
+                            <td>102</td>
+                        </tr>
+                            <tr>
+                            <td>Crepusculo</td>
+                            <td>Catherine Hardwicke</td>
+                            <td>2008</td>
+                            <td>Fantasia</td>
+                            <td>Ingles</td>
+                            <td>121</td>
+                        </tr>
+                            <tr>
+                            <td>MammaMia!</td>
+                            <td>Phyllinda Lloyd</td>
+                            <td>2008</td>
+                            <td>Comedia musical</td>
+                            <td>Ingles</td>
+                            <td>108</td>
+                        </tr>
+                    </tbody>
+                    <tfoot>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>Duracion Total</td>
+                            <td>652</td>
+                            
+                            
+                        </tr>
+                    </tfoot>
+                    
+                </table>
+               
+                 
+            </section>
+            <section>
+                <h2>Tabla overflow-x</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras quis suscipit lacus. Aliquam erat volutpat. Duis eu ultrices nibh. Nam vitae orci convallis, ornare dolor eu, mattis mi. Aenean vehicula bibendum nibh, quis aliquam lacus ultricies et. Suspendisse eros nibh, tincidunt nec massa quis, ultricies semper erat. Etiam euismod velit leo, vitae aliquam elit lacinia vel. Nunc facilisis mi vitae est sagittis venenatis. Donec vitae rutrum mauris. In hac habitasse platea dictumst. In hac habitasse platea dictumst. Duis tincidunt semper felis, id auctor lorem porta vel. Nunc pellentesque sapien nec nunc tempor, quis luctus mi ultricies. Lorem ipsum dolor sit.</p>
+                <table id="tab_series">
+                    <thead>
+                        <tr>
+                            <th>Serie</th>
+                            <th>Año</th>
+                            <th>Gnero</th>
+                            <th colspan="2">Creador</th>
+                            <th colspan="2">Pais</th>
+                            <th>Temporadas</th>
+                        </tr>
+                    
+                    
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Dr. house</td>
+                            <td>2004</td>
+                            <td>Drama medico</td>
+                            <td>David Shore</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>8</td>
+                        </tr>
+                        <tr>
+                            <td>House of Cards</td>
+                            <td>2013</td>
+                            <td>Policial</td>
+                            <td>Beu Willson</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>6</td>
+                        </tr>
+                        <tr>
+                            <td>Hora de aventura</td>
+                            <td>2018</td>
+                            <td>Fnatasia</td>
+                            <td>Pandleton Ward</td>
+                            <td></td>
+                            <td>Estados Unidos</td>
+                            <td>Suecia</td>
+                            <td>10</td>
+                        </tr>
+                        <tr>
+                            <td>Belleza verdadera</td>
+                            <td>2020</td>
+                            <td>Romance</td>
+                            <td>Kim San-Hyup</td>
+                            <td></td>
+                            <td>Corea del Sur</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Shogun</td>
+                            <td>2024</td>
+                            <td>Drama historico</td>
+                            <td>Rachel Kondo</td>
+                            <td>Jutin Marks</td>
+                            <td>Estados Unidos</td>
+                            <td></td>
+                            <td>1</td>
+                        </tr>
+                        <tr>
+                            <td>Club de Cuervos</td>
+                            <td>2015</td>
+                            <td>Comedia Dramatica</td>
+                            <td>Gaz Alazraki</td>
+                            <td>Michael Lam</td>
+                            <td>Mexico</td>
+                            <td></td>
+                            <td>4</td>
+                        </tr>
+                    </tbody>
+                    <tfoot></tfoot>
+                </table>
+            </section>
+        </main>
+        <footer>
+            <h6> Elaborado por Zarate Perez Margarita</h6>
+        </footer>
+        
+    </body>
+</html>
